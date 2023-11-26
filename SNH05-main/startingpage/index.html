@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foldmaster - A Place for Origami Lovers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Foldmaster</h1>
+    <p>A Place for Origami Lovers</p>
+  </header>
+  <main>
+    <!-- ...Previous HTML code remains unchanged... -->
+    <div class="image-upload">
+      <label for="inputImage" class="custom-file-upload">Choose File</label>
+      <input type="file" id="inputImage" accept="image/*">
+      <button onclick="recognizeImage()">Recognize Origami</button>
+    </div>
+   <!-- ...Remaining HTML code... -->
+
+   <video id="video" autoplay playsinline></video>
+<button onclick="startCamera()">Turn On Camera</button>
+
+<script>
+    async function startCamera() {
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            const videoElement = document.getElementById('video');
+            videoElement.srcObject = stream;
+        } catch (error) {
+            console.error('Error accessing camera:', error);
+        }
+    }
+</script>
+  
+    <div class="result">
+      <h2>Recognition Result:</h2>
+      <p id="resultText"></p>
+    </div>
+    <div class="origami-tutorials">
+      <h2>10 Easy Origami Tutorials for Beginners:</h2>
+      <!-- Placeholder content for tutorials -->
+      <div class="tutorial">
+        <h3>Tutorial 1: Origami Crane</h3>
+        <img src="https://origami.guide/wp-content/uploads/2018/03/howto-origami-crane-00-825x825.jpg" height="200px" width="200px" alt="Origami Crane">
+        <button onclick="redirectToYouTube1()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube1() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=GC_Szxdqh2Y';
+          }
+        </script>
+        <p>Step-by-step guide to folding an origami crane.</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 2: Origami Butterfly</h3>
+        <img src="https://origami.guide/wp-content/uploads/2020/04/traditional-origami-butterfly-tutorial-00-1320x1320.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube2()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube2() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=N94a0Hfyhug&pp=ygURYnV0dGVyZmx5IG9yaWdhbWk%3D';
+          }
+        </script>
+        <p>Learn to fold a beautiful butterfly with easy instructions.</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 3: Origami Fortune Teller</h3>
+        <img src="https://origami.guide/wp-content/uploads/2018/04/origami-fortune-teller-tutorial-00-825x825.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube3()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube3() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=SAhiIlTxUYA&pp=ygUPZm90dW5lIHRlbGxlciBv';
+          }
+        </script>
+        <p>The origami fortune teller, sometimes called a cootie catcher. This easy origami model can be used in a fortune telling game.</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 4: Origami Lotus</h3>
+        <img src="https://origami.guide/wp-content/uploads/2018/04/easy-origami-lotus-tutorial-00-825x825.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube4()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube4() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=UaXMTK79n_c&pp=ygUNb3JpZ2FtaSBsb3R1cw%3D%3D';
+          }
+        </script>
+        <p>This origami flower can be folded with a napkin, making it a great party trick.</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 5: Origami Masu Box</h3>
+        <img src="https://origami.guide/wp-content/uploads/2018/04/origami-masu-box-00-825x825.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube5()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube5() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=-cCLXlYt7-Y&pp=ygUQbWFzdSBib3ggb3JpZ2FtaQ%3D%3D';
+          }
+        </script>
+        <p>The origami Masu box is one origami model that is easy to commit to memory.</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 6: Origami Jumping Frog</h3>
+        <img src="https://origami.guide/wp-content/uploads/2018/04/origami-jumping-frog-00-825x825.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube6()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube6() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=NxYNq4sYA5I&pp=ygUUanVtcGluZyBmcm9nIG9yaWdhbWk%3D';
+          }
+        </script>
+        <p>A lot of you will remember folding these origami frogs and racing them with your friends at school.</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 7: Origami Swan</h3>
+        <img src="https://origami.guide/wp-content/uploads/2018/04/origami-swan-tutorial-00-825x825.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube7()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube7() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=GC_Szxdqh2Y&t=5s&pp=ygUMc3dhbiBvcmlnYW1p';
+          }
+        </script>
+        <p>The majestic swan, one of the simplest and oldest origami models.</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 8: Origami Hat</h3>
+        <img src="https://origami.guide/wp-content/uploads/2018/03/easy-origami-hat-tutorial-00-825x825.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube8()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube8() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=RlG6PxHDwb4&pp=ygULb3JpZ2FtaSBoYXQ%3D';
+          }
+        </script>
+        <p>Remember making these from newspaper? You must have grown up in the nineties!</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 9: Origami Water Ballon</h3>
+        <img src="https://origami.guide/wp-content/uploads/2018/04/origami-water-bomb-tutorial-00-825x825.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube9()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube9() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=tSMLk_zGzf4&pp=ygUUb3JpZ2FtaSB3YXRlciBiYWxsb24%3D';
+          }
+        </script>
+        <p>These satisfying origami water balloons can actually be used as water balloons! Now they are more popular as decorations to hang on a string or over lights.</p>
+      </div>
+      <div class="tutorial">
+        <h3>Tutorial 10: Origami Heart</h3>
+        <img src="https://origami.guide/wp-content/uploads/2019/03/easy-origami-heart-tutorial-00-825x825.jpg" height="200px" width="200px" alt="Origami Butterfly">
+        <button onclick="redirectToYouTube10()">Watch Origami Tutorial</button>
+      
+        <script>
+          function redirectToYouTube10() {
+            // Replace the YouTube video URL below with your desired video URL
+            window.location.href = 'https://www.youtube.com/watch?v=nnV262Egucw';
+          }
+        </script>
+        <p>Origami hearts get more popular around February but are quick and easy to make and use for cards or to leave in your crush’s bag!</p>
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

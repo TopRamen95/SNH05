@@ -1,0 +1,53 @@
+/* General reset and basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Start Page styles */
+  .start-page {
+    height: 100vh;
+    background-color: #f3f3f3; /* Fallback color */
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/921/270/334/minimalism-red-low-poly-abstract-wallpaper-preview.jpg'); /* Replace with your origami background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .content {
+    margin: 20px;
+    text-align: left;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: cursive;
+  }
+  
+  p {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .get-started-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4285f4; /* Change color as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #3367d6; /* Darker color on hover */
+  }
+  
